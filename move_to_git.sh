@@ -4,6 +4,10 @@ html_dir="./public/"
 all_files="*"
 git_file="do_git.sh"
 
+# Building site
+hugo
+echo "Site built"
+
 # Removing previous files
 echo "Removing previous files"
 rm -rf $deploy_dir$all_files
