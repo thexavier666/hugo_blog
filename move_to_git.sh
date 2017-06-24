@@ -8,7 +8,7 @@ git_file="do_git.sh"
 hugo
 echo "Site built"
 
-# Removing previous files
+# Removing previous files in deployment folder
 echo "Removing previous files"
 rm -rf $deploy_dir$all_files
 #read -n 1 -s
@@ -24,9 +24,9 @@ echo "Copying the file to deployment folder"
 cp $git_file $deploy_dir
 #read -n 1 -s
 
-# Creating new shell | changing to deployment dir | gitting
+# Creating new shell | changing to deployment folder | gitting
 echo "Creating new shell | changing to deployment dir | gitting"
 (cd $deploy_dir && exec sh $git_file)
 
-# gitting the MD files as well
+# gitting the MD files
 sh $git_file

@@ -17,12 +17,12 @@ topics:
 type: post
 ---
 
-This is just a self-tutorial because I need to install and reinstall Linux quite a few times. Some of the tips are for laptops only. They will be tagged with [Laptop]
+This is just a tutorial/guide for myself because I need to install and reinstall Linux quite a few times. Some of the tips are for laptops only. They will be tagged with [Laptop]. I generally install Ubuntu Mate in all machines because it's light and stable.
 
 ## Network connectivity
 
 ### Adding proxy
-Edit the file `/etc/apt/apt.conf` and add the following lines
+Edit the file `/etc/profile` and add the following lines
 
 ```shell
 export http_proxy="http://10.3.100.207:8080"
@@ -51,6 +51,10 @@ Install the following tools. However, these are not mandatory for everybody
 3. `brightness-controller` [Laptop] - Since latops don't provide display temperature control
 4. `htop` - For system status
 5. `vim` - For VIM'ing
+
+A simple one-liner for installing all of the above
+
+`sudo apt-get install openssh-server screen htop vim`
 
 ## Customizing the looks
 
@@ -86,7 +90,7 @@ Note : I need to add `-E` everytime I need to add a PPA. I need to find out why.
 
 ## Miscellaneous Tasks
 
-#### Disable bluetooth
+#### Disabling bluetooth
 
 You may not want to do this if you use Bluetooth frequently. I have posted the one which worked for me here. Try out the other options mentioned [here][1].
 
