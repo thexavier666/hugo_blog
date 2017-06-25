@@ -11,7 +11,7 @@ keywords:
 #tags:
 #- one
 #- two
-title: Post-installation GNU/Linux in IIT KGP
+title: Post-installation of GNU/Linux in IIT KGP
 topics:
 - topic 1
 type: post
