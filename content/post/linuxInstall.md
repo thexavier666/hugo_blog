@@ -46,4 +46,4 @@ While deleting partitions, make sure not to delete any attached USB drives (whic
 * `root` - A standard commercial installation takes 7-8 GB. So I give it an extra 20 GB space for all tools (total of 30 GB), which should last me 5 years. Linux tools anyway take very space.
 * `home` - Rest of the hard disk :)
 
-[1]: (https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/s2-diskpartrecommend-ppc.html)
+[1]: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/s2-diskpartrecommend-ppc.html
