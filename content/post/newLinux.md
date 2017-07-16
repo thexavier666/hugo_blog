@@ -104,15 +104,17 @@ You may not want to do this if you use Bluetooth frequently. I have posted the o
 1. Edit the following file `/etc/network/interfaces`
 2. Find the primary network interface. It should be `eth0` most of the time
 3. Put the following text
+
     ```shell
     auto eth0
     iface eth0 inet static
-        address 10.20.30.40
+        address 10.5.20.1
         netmask 255.255.255.0
-        broadcast 10.20.30.255
-        gateway 10.20.30.1
-        dns-nameservers 8.8.8.8
+        broadcast 10.5.20.255
+        gateway 10.5.20.2
+        dns-nameservers 10.5.18.80
     ```
+
 4. Reboot the system (Restarting the NIC won't do)
 
 #### Changing name of network interface
