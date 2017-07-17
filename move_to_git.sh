@@ -29,4 +29,4 @@ echo "Creating new shell | changing to deployment dir | gitting"
 (cd $deploy_dir && exec sh $git_file)
 
 # gitting the MD files
-# sh $git_file
+sh $git_file
