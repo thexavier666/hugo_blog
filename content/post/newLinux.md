@@ -17,7 +17,9 @@ topics:
 type: post
 ---
 
-This is just a tutorial/guide for myself because I need to install and reinstall Linux quite a few times. Some of the tips are for laptops only. They will be tagged with [Laptop]. I generally install Ubuntu Mate in all machines because it's light and stable.
+This is just a tutorial/guide for myself because I need to install and reinstall Linux quite a few times. Some of the tips are for laptops only. They will be tagged with [Laptop]. 
+
+I generally install Ubuntu Mate in all machines because it's light and stable.
 
 ## Network connectivity
 
@@ -58,9 +60,9 @@ A simple one-liner for installing all of the above
 
 ## Customizing the looks
 
-The [Arc theme](3) and [Oranchelo](4) icon pack combo is perfect for me. You can try it out.
+The [Arc theme][3] and [Oranchelo][4] icon pack combo is perfect for me. You can try it out.
 
-Note : The [Numix Circle icon](5) pack is also quite nice
+Note : The [Numix Circle icon][5] pack is also quite nice
 
 #### Installing Arc theme
 
@@ -134,8 +136,8 @@ Check out the answers mentioned in the link over [here][2]. The answer which wor
 * Set it to `HandleLidSwitch=ignore` if you don't want anything to happen with a lid close
 * Set it to `HandleLidSwitch=lock` if you want the screen get locked with a lid close
 
-[1]: (https://askubuntu.com/questions/67758/how-can-i-deactivate-bluetooth-on-system-startup)
-[2]: (https://askubuntu.com/questions/141866/keep-ubuntu-server-running-on-a-laptop-with-the-lid-closed/594417#594417)
-[3]: (https://github.com/OrancheloTeam/oranchelo-icon-theme)
-[4]: (https://github.com/horst3180/arc-theme)
-[5]: (https://github.com/numixproject/numix-icon-theme-circle)
+[1]: https://askubuntu.com/questions/67758/how-can-i-deactivate-bluetooth-on-system-startup
+[2]: https://askubuntu.com/questions/141866/keep-ubuntu-server-running-on-a-laptop-with-the-lid-closed/594417#594417
+[3]: https://github.com/OrancheloTeam/oranchelo-icon-theme
+[4]: https://github.com/horst3180/arc-theme
+[5]: https://github.com/numixproject/numix-icon-theme-circle

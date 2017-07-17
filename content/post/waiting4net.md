@@ -44,5 +44,5 @@ while True
 
 You can find the source code [here][1]
 
-[1]: (https://gist.github.com/thexavier666/88a50c25316442eb293f0232a69250e7)
-[2]: (http://www.urbandictionary.com/define.php?term=pita)
+[1]: https://gist.github.com/thexavier666/88a50c25316442eb293f0232a69250e7
+[2]: http://www.urbandictionary.com/define.php?term=pita
