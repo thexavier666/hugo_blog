@@ -26,7 +26,6 @@ However, if we can overlook it, we can create an easy file sharing system.
 
 Now let us see how to create a Samba drive
 
-
 ## Steps to take
 
 * Install Samba
@@ -37,11 +36,10 @@ Now let us see how to create a Samba drive
 
 * Create user for Samba
 
-	I've decided to name the user `achilles`
+	I've decided to name the Samba user `smb_user`
 
 	```
-	useradd achilles
-	passwd achilles
+	useradd smb_user
 	```
 
 	**Note** : It is advisable to not add a `sudo` user as a samba user. Otherwise, you will lose sudo permission. 
@@ -49,24 +47,24 @@ Now let us see how to create a Samba drive
 * Create a directory to be shared
 
 	```
-	mkdir /smb_user
-	chmod 770 /smb_user
+	mkdir /smb_drive
+	chmod 770 /smb_drive
 	```
 
 * Create group for Samba
 
-	The name of the group is WORKGROUP simply because of Windows traditions :smile: 
+	The name of the group is WORKGROUP simply because of Windows traditions :)
 
 	```
 	groupadd WORKGROUP
-	chown :WORKGROUP /smb_user
+	chown :WORKGROUP /smb_drive
 	```
 
 * Add user to Samba group
 
 	```
-	smbpasswd -a achilles
-	usermod -G WORKGROUP achilles
+	smbpasswd -a smb_user
+	usermod -G WORKGROUP smb_user
 	```
 
 * Edit the file `/etc/samba/smb.conf`. Add the following at the end of the file. Try to understand the following on your own.
@@ -74,7 +72,7 @@ Now let us see how to create a Samba drive
 	```
 	[achilles]
 		comment = Linux Samba Share
-		path = /smb_user
+		path = /smb_drive
 		browsable = yes
 		guest ok = yes
 		read only = yes

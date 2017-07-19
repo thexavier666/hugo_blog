@@ -1,7 +1,7 @@
 ---
 author: Sumitro
 date: 2017-07-17T19:28:23+05:30
-description: description
+description: See the title
 draft: false
 #keywords:
 #- key
