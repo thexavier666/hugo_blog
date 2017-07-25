@@ -27,10 +27,10 @@ I generally install Ubuntu Mate in all machines because it's light and stable.
 Edit the file `/etc/profile` and add the following lines
 
 ```shell
-export http_proxy="http://10.3.100.207:8080"
-export https_proxy="http://10.3.100.207:8080"
-export ftp_proxy="http://10.3.100.207:8080"
-export no_proxy="localhost,127.0.0.1,10.0.0.0/8"
+export http_proxy="http://172.16.2.30:8080"
+export https_proxy="http://172.16.2.30:8080"
+export ftp_proxy="http://172.16.2.30:8080"
+export no_proxy="localhost,127.0.0.1,10.0.0.0/8,192.168.0.0/16"
 ```
 
 ### Enabling proxy for `apt`
@@ -39,10 +39,12 @@ This is required for installing updates.
 Edit the file `/etc/apt/apt.conf` and add the following lines
 
 ```shell
-Acquire::http::proxy "http://10.3.100.207:8080";
-Acquire::https::proxy "http://10.3.100.207:8080";
-Acquire::ftp::proxy "http://10.3.100.207:8080";
+Acquire::http::proxy "http://172.16.2.30:8080";
+Acquire::https::proxy "http://172.16.2.30:8080";
+Acquire::ftp::proxy "http://172.16.2.30:8080";
 ```
+
+Note : The proxy of IIT-KGP has changed to `http://172.16.2.30:8080`. Earlier it was `http://10.3.100.207:8080`
 
 ## Installing important tools
 
@@ -135,6 +137,13 @@ Check out the answers mentioned in the link over [here][2]. The answer which wor
 * Find the line `#HandleLidSwitch=suspend`
 * Set it to `HandleLidSwitch=ignore` if you don't want anything to happen with a lid close
 * Set it to `HandleLidSwitch=lock` if you want the screen get locked with a lid close
+
+#### Enable wifi on startup before login [Laptop]
+
+* Edit the file `/etc/NetworkManager/system-connections/<your AP name>`
+* Find the line starting with `permission=`
+* Delete everthing in that line after the `=` sign
+
 
 [1]: https://askubuntu.com/questions/67758/how-can-i-deactivate-bluetooth-on-system-startup
 [2]: https://askubuntu.com/questions/141866/keep-ubuntu-server-running-on-a-laptop-with-the-lid-closed/594417#594417
