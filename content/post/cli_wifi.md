@@ -50,9 +50,7 @@ I'm assuming the name of the AP to be `foo` and the password to be `bar`, and th
 
 Using this method, you should be able to connect, but I've found this to be unreliable. I've found another solution which uses the CLI of `Network Manager`. Keep it in mind that this might not be available in all versions of Linux. But this quite stable and simple and a one-liner.
 
-    nmcli d wifi connect foo password bar iface wlan0
-
-You might be greeted with some errors but ignore them, you should be connected to your AP.
+    nmcli d wifi connect foo password bar ifname wlan0
 
 Enjoy.
 
